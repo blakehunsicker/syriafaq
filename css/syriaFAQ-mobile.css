@@ -1,0 +1,31 @@
+div#masthead > h1 {
+	font-size: 32px;
+	margin-bottom: 0px;
+}
+
+#subTitle {
+	margin-top: 0px;
+}
+
+#questions {
+	font-size: 28px;
+}
+
+div.col-xs-12 {
+	font-family: bevan;
+	text-align: center;
+	z-index: 2;
+	position: relative;
+}
+
+#byline {
+	text-align: center;
+}
+
+.bylineTitles {
+	color: #C0C0C0;
+}
+
+h3#lead {
+	line-height: 1;
+}
