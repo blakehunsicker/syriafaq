@@ -2,23 +2,15 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Syria FAQ</title>
+    <link href="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/syriaFAQ.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:700' rel='stylesheet' type='text/css'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://cdn.sublimevideo.net/js/3eyo2ase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      
-      ga('create', 'UA-51280301-1', 'syriafaq.com');
-      ga('send', 'pageview');
-      
-    </script>
+    
     <script>
       if (screen.width <= 768) {
         document.location = "m.html";
@@ -33,10 +25,18 @@
           <h4 id="subTitle" data-scroll-reveal="wait 1.5s, enter top over 1s">The conflict explained by those who live it</h4>
         </div>
         <div id="questions">
-          <h2 id="questionOne" data-scroll-reveal="wait 2s, enter top over 1s"><a href="#kpE5NWWM7_8" class="sublime" data-settings='overlay-opacity:0.95'>Why is there a war in Syria?</a></h2>
-          <h2 id="questionTwo" data-scroll-reveal="wait 2s, enter top over 1s"><a href="#videoTwo" class="sublime" data-settings='overlay-opacity:0.95'>What about the extremists?</a></h2>
-          <h2 id="questionThree" data-scroll-reveal="wait 2s, enter top over 1s"><a href="#gog5bnNmEVI" class="sublime" data-settings='overlay-opacity:0.95'>What should happen after the war?</a></h2>
+          <h2 id="questionOne" data-scroll-reveal="wait 2s, enter top over 1s"><a href="https://www.youtube.com/embed/kpE5NWWM7_8" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>Why is there a war in Syria?</a></h2>
+          <h2 id="questionTwo" data-scroll-reveal="wait 2s, enter top over 1s"><a href="https://www.youtube.com/embed/0lJsefP1Hrw" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>What about the extremists?</a></h2>
+          <h2 id="questionThree" data-scroll-reveal="wait 2s, enter top over 1s"><a href="https://www.youtube.com/embed/gog5bnNmEVI" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>What should happen after the war?</a></h2>
         </div>
+
+        <!-- <a href="#" data-featherlight="#mylightbox">Open element in lightbox</a> -->
+        <!-- <a href="https://www.youtube.com/embed/kpE5NWWM7_8" data-featherlight="iframe">Open example.com in an iframe</a>
+        https://www.youtube.com/watch?v=0lJsefP1Hrw -->
+        <!-- <div id="mylightbox">
+          This div will be opened in a lightbox
+        </div> -->
+
       </div>
     </div>
     <div data-0="opacity:1;" data-200="opacity:0.5;">
@@ -45,14 +45,15 @@
         <source src="https://s3.amazonaws.com/SyriaFAQVideos/background.webm" type="video/webm"/>
       </video>
     </div>
-    <div class="videos" style="visibility:hidden">
-      <video id="kpE5NWWM7_8" width="1280" height="720" title="Syria FAQ: Why is there a war in Syria?" data-uid="kpE5NWWM7_8" data-youtube-id="kpE5NWWM7_8" preload="none">
+    <!-- <div class="videos" style="visibility:hidden">
+      <video id="myLightbox" width="1280" height="720" title="Syria FAQ: Why is there a war in Syria?">
+        <source src="https://www.youtube.com/watch?v=kpE5NWWM7_8"/>
       </video>
       <video id="videoTwo" poster="//img.youtube.com/vi/0lJsefP1Hrw/hqdefault.jpg" width="1280" height="720" title="Syria FAQ: What about the extremists" data-uid="videoTwo" data-youtube-id="0lJsefP1Hrw" preload="none">
       </video>
       <video id="gog5bnNmEVI" poster="http://img.youtube.com/vi/gog5bnNmEVI/hqdefault.jpg" width="1280" height="720" title="Syria FAQ: What do Syrians want after their war is over?" data-uid="gog5bnNmEVI" data-youtube-id="gog5bnNmEVI" preload="none">
       </video>
-    </div>
+    </div> -->
     <div id="credits" class="row" data-100="top:94%;">
         <div class="col-sm-12">
           <div class="row">

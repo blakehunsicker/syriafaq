@@ -87,3 +87,18 @@ h4.bylineNames {
 #questionTwo:hover {
 	cursor: pointer;
 }
+
+.featherlight-content {
+	background: none !important;
+}
+
+iframe {
+	width: 800px;
+	height: 450px;
+}
+
+
+
+.featherlight-close {
+	display: none;
+}
