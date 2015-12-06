@@ -14,8 +14,8 @@ div#masthead > h1 {
 	margin: 0px 0px 10px 0px;
 }
 
-#questions h2 a,
-#questions h2 a:link {
+a,
+a:link {
 	color: #333;
 	text-decoration: none;
 }
@@ -23,16 +23,6 @@ div#masthead > h1 {
 #questions h2 a:hover {
 	color: #555;
 	text-decoration: none;
-}
-
-.fullWidth {
-	z-index: 1;
-	position: fixed;
-}
-
-.videos {
-	z-index: 2;
-	position: fixed;
 }
 
 div.col-xs-12 {
@@ -43,33 +33,25 @@ div.col-xs-12 {
 	position: fixed;
 }
 
-div#credits {
+footer {
 	background-color: #080808;
 	color: #555;
 	z-index: 3;
-	position: relative;
+	position: fixed;
+	bottom:0;
+	width:100%;
+	padding:5px 0px 5px 0px;
 }
-
-#credits a,
-#credits a:link {
+footer a {
 	color: #555;
-	text-decoration: none;
+}
+footer a:hover {
+	color: #666;
 }
 
-#credits a:hover {
-	color: #888;
-	text-decoration: none;
-}
-
-h4.bylineTitles {
+h5 {
 	line-height: 1.2;
 	margin: 2px 0px 1px 5px;
-}
-
-h4.bylineNames {
-	line-height: 1;
-	font-size: 16px;
-	margin: 0px 5px 25px 5px;
 }
 
 #lead {
@@ -97,8 +79,51 @@ iframe {
 	height: 450px;
 }
 
-
-
 .featherlight-close {
 	display: none;
+}
+
+.featherlight:last-of-type {
+	background: rgba(0,0,0,.85);
+}
+
+.ytp-chrome-top-buttons,
+.ytp-title {
+	display: none!important;
+}
+
+@media (max-width:769px) {
+	div#masthead > h1 {
+		font-size: 32px;
+		margin-bottom: 0px;
+	}
+
+	#subTitle {
+		margin-top: 0px;
+	}
+
+	#questions {
+		font-size: 28px;
+	}
+
+	div.col-xs-12 {
+		font-family: bevan;
+		text-align: center;
+		z-index: 2;
+		/*position: relative;*/
+	}
+
+	#byline {
+		text-align: center;
+	}
+
+	.bylineTitles {
+		color: #C0C0C0;
+	}
+
+	h3#lead {
+		line-height: 1;
+	}
+
+
 }

@@ -10,82 +10,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.vide.js"></script>
     
     <script>
-      if (screen.width <= 768) {
-        document.location = "m.html";
-      }
+    //   if (screen.width <= 768) {
+    //     document.location = "m.html";
+    //   }
     </script>
+
   </head>
   <body>
     <div class="row">
       <div class="col-xs-12" data-0="opacity:1;" data-200="opacity:0.65;">
         <div id="masthead">
-          <h1 data-scroll-reveal="wait 1.5s, enter top over 1s">SyriaFAQ</h1>
-          <h4 id="subTitle" data-scroll-reveal="wait 1.5s, enter top over 1s">The conflict explained by those who live it</h4>
+          <h1>SyriaFAQ</h1>
+          <h4>The conflict explained by those who live it</h4>
         </div>
         <div id="questions">
-          <h2 id="questionOne" data-scroll-reveal="wait 2s, enter top over 1s"><a href="https://www.youtube.com/embed/kpE5NWWM7_8" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>Why is there a war in Syria?</a></h2>
-          <h2 id="questionTwo" data-scroll-reveal="wait 2s, enter top over 1s"><a href="https://www.youtube.com/embed/0lJsefP1Hrw" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>What about the extremists?</a></h2>
-          <h2 id="questionThree" data-scroll-reveal="wait 2s, enter top over 1s"><a href="https://www.youtube.com/embed/gog5bnNmEVI" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>What should happen after the war?</a></h2>
+          <h2><a href="https://www.youtube.com/embed/kpE5NWWM7_8?autoplay=1&showinfo=0" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>Why is there a war in Syria?</a></h2>
+          <h2><a href="https://www.youtube.com/embed/0lJsefP1Hrw?autoplay=1&showinfo=0" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>What about the extremists?</a></h2>
+          <h2><a href="https://www.youtube.com/embed/gog5bnNmEVI?autoplay=1&showinfo=0" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>What should happen after the war?</a></h2>
         </div>
-
-        <!-- <a href="#" data-featherlight="#mylightbox">Open element in lightbox</a> -->
-        <!-- <a href="https://www.youtube.com/embed/kpE5NWWM7_8" data-featherlight="iframe">Open example.com in an iframe</a>
-        https://www.youtube.com/watch?v=0lJsefP1Hrw -->
-        <!-- <div id="mylightbox">
-          This div will be opened in a lightbox
-        </div> -->
-
       </div>
     </div>
-    <div data-0="opacity:1;" data-200="opacity:0.5;">
-      <video autoplay loop class="fullWidth">
-        <source src="https://s3.amazonaws.com/SyriaFAQVideos/background.mp4" type="video/mp4"/>
-        <source src="https://s3.amazonaws.com/SyriaFAQVideos/background.webm" type="video/webm"/>
-      </video>
+
+    <div style="width: 100vw; height: 100vh; position:absolute;"
+      data-vide-bg="mp4: https://s3.amazonaws.com/SyriaFAQVideos/background.mp4, webm: https://s3.amazonaws.com/SyriaFAQVideos/background.webm, poster: img/background.png"
+      data-vide-options="posterType: jpg, loop: true, muted: false, position: 0% 0%">
     </div>
-    <!-- <div class="videos" style="visibility:hidden">
-      <video id="myLightbox" width="1280" height="720" title="Syria FAQ: Why is there a war in Syria?">
-        <source src="https://www.youtube.com/watch?v=kpE5NWWM7_8"/>
-      </video>
-      <video id="videoTwo" poster="//img.youtube.com/vi/0lJsefP1Hrw/hqdefault.jpg" width="1280" height="720" title="Syria FAQ: What about the extremists" data-uid="videoTwo" data-youtube-id="0lJsefP1Hrw" preload="none">
-      </video>
-      <video id="gog5bnNmEVI" poster="http://img.youtube.com/vi/gog5bnNmEVI/hqdefault.jpg" width="1280" height="720" title="Syria FAQ: What do Syrians want after their war is over?" data-uid="gog5bnNmEVI" data-youtube-id="gog5bnNmEVI" preload="none">
-      </video>
-    </div> -->
-    <div id="credits" class="row" data-100="top:94%;">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-sm-6">
-              <h4 class="bylineTitles">Reported, filmed, edited, designed and developed by</h4>
-              <h3 id="lead">Blake Hunsicker <a href="http://blakehunsicker.com" target="_blank"><img src="icons/home.png" class="social"/></a> <a href="http://twitter.com/blakehunsicker" target="_blank"><img src="icons/twitter.png" class="social"/></a></h3>
-            </div>
-            <div class="col-sm-2">
-              <h4 class="bylineTitles">Produced by</h4>
-                <h4 class="bylineNames"><a href="mailto:mohdrawashdeh@gmail.com">Mohammed Rawashdeh</a>
-                <br>
-                <a href="https://twitter.com/AnsRed" target="_blank">Anas Hamra</a></h4>
-            </div>
-            <div class="col-sm-4">
-              <h4 class="bylineTitles">Special thanks to</h4>
-              <h4 class="bylineNames">Lara Setrakian, Katarina Montgomery, Jason Maloney, Doc and Joyce Searls, Robert Karkafi, Jay Rosen, Mitchell Stephens</h4>
-            </div>  
-          </div>
+
+    <footer class="footer">
+        <div class="container">
+          <h5>Reported, filmed, edited, designed and developed by <a href="https://twitter.com/blakehunsicker" >Blake Hunsicker</a></h5>
         </div>
-    </div>
-    <script src="js/skrollr.min.js"></script>
-      <script>
-        var s = skrollr.init();
-      </script>
-      <script src='js/scrollReveal.js'></script>
-      <script>
-          window.scrollReveal = new scrollReveal();
-      </script>
-      <script>
-      (function(){
-        $("#kpE5NWWM7_8").css("visibility", "hidden");
-      });
-    </script>
+    </footer>
   </body>
 </html>
