@@ -83,6 +83,7 @@ iframe {
 	display: none;
 }
 
+.featherlight,
 .featherlight:last-of-type {
 	background: rgba(0,0,0,.85);
 }
@@ -103,15 +104,13 @@ iframe {
 	}
 
 	#questions {
-		font-size: 28px;
+		font-size: 22px;
 	}
 
 	div.col-xs-12 {
 		font-family: bevan;
 		text-align: center;
-		z-index: 2;
-		/*position: relative;*/
-	}
+		z-index: 2;	}
 
 	#byline {
 		text-align: center;
