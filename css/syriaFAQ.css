@@ -102,7 +102,7 @@ iframe {
 
 @media (max-width:769px) {
 	div.col-xs-12 {
-		margin-top: 40px;
+		margin-top: 0px;
 	}
 	div#masthead > h1 {
 		font-size: 32px;
