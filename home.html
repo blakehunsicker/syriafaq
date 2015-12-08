@@ -14,17 +14,19 @@
     
     <script>
       if (screen.width <= 768) {
-        document.location = "m.html";
+        // $('.vide-background').css('display','none');
+        // $('.vide-background-b').css('display','block');
+
       }
     </script>
 
   </head>
   <body>
-    <div class="row">
-      <div class="col-xs-12" data-0="opacity:1;" data-200="opacity:0.65;">
+    <!-- <div class="row"> -->
+      <div class="col-xs-12">
         <div id="masthead">
           <h1>SyriaFAQ</h1>
-          <h4 class="subtitle">The conflict explained by those who live it</h4>
+          <h5 class="subtitle">The conflict explained by those who live it</h5>
         </div>
         <div id="questions">
           <h2><a href="https://www.youtube.com/embed/kpE5NWWM7_8?autoplay=1&showinfo=0" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>Why is there a war in Syria?</a></h2>
@@ -32,17 +34,20 @@
           <h2><a href="https://www.youtube.com/embed/gog5bnNmEVI?autoplay=1&showinfo=0" data-featherlight="iframe" data-settings='overlay-opacity:0.95'>What should happen after the war?</a></h2>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 
-    <div style="width: 100vw; height: 100vh; position:absolute;"
+    <div class="vide-background" style="width: 100vw; height: 100vh; position:absolute;"
       data-vide-bg="mp4: https://s3.amazonaws.com/SyriaFAQVideos/background.mp4, webm: https://s3.amazonaws.com/SyriaFAQVideos/background.webm, poster: img/background.png"
       data-vide-options="posterType: png, loop: true, muted: false, position: 0% 0%">
     </div>
+    <div class="vide-background-b" style="width: 100vw; height: 100vh; position:absolute;"
+      data-vide-bg="poster: img/background.png"
+      data-vide-options="posterType: png, loop: true, muted: false, position: 0% 0%">
+    </div>
+
 
     <footer class="footer">
-        <div class="container">
-          <h5>Reported, filmed, edited, designed and developed by <a href="https://twitter.com/blakehunsicker" >Blake Hunsicker</a></h5>
-        </div>
+      <h5>Reported, filmed, edited, designed and developed by <a href="https://twitter.com/blakehunsicker" >Blake Hunsicker</a></h5>
     </footer>
   </body>
 </html>
