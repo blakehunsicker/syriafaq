@@ -101,6 +101,9 @@ iframe {
 }
 
 @media (max-width:769px) {
+	div.col-xs-12 {
+		margin-top: 40px;
+	}
 	div#masthead > h1 {
 		font-size: 32px;
 		font-family: bevan;
